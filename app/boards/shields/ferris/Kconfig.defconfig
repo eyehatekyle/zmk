@@ -1,0 +1,26 @@
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if SHIELD_FERRIS_LEFT
+
+config ZMK_KEYBOARD_NAME
+	default "Ferris"
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+	default y
+
+endif
+
+if SHIELD_FERRIS_RIGHT
+
+config ZMK_KEYBOARD_NAME
+	default "Ferris_Right"
+
+endif
+
+if SHIELD_FERRIS_RIGHT || SHIELD_FERRIS_LEFT
+
+config ZMK_SPLIT
+	default y
+
+endif
