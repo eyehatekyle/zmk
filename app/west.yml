@@ -6,6 +6,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: microsoft
       url-base: https://github.com/microsoft
+    - name: mcrosson
+      url-base: https://github.com/mcrosson
   projects:
     - name: zephyr
       remote: zmkfirmware
@@ -37,5 +39,10 @@ manifest:
       remote: microsoft
       path: tools/uf2
       clone-depth: 1
+    - name: zmk
+      remote: mcrosson
+      revision: feat-behavior-sleep
+      import: app/west.yml
   self:
     west-commands: scripts/west-commands.yml
+    path: config

@@ -22,31 +22,37 @@
                 timeout-ms = <50>;
                 key-positions = <17 18>;
                 bindings = <&kp BSPC>;
+            };
             combo_enter {
                 timeout-ms = <50>;
                 key-positions = <22 23>;
                 bindings = <&kp ENTER>;
-            combo_esc {
+            };
+            combo_gresc {
                 timeout-ms = <50>;
                 key-positions = <0 1>;
-                bindings = <&kp ESC>;
+                bindings = <&gresc>;
+            };
             combo_tab {
                 timeout-ms = <50>;
                 key-positions = <5 6>;
                 bindings = <&kp TAB>;
+            };
             combo_lsft {
                 timeout-ms = <50>;
                 key-positions = <10 11>;
                 bindings = <&kp LSFT>;
+            };
             combo_taskmanager {
                 timeout-ms = <50>;
                 key-positions = <0 10>;
                 bindings = <&kp LC(LS(ESC))>;
+            };
             combo_screensnip {
                 timeout-ms = <50>;
                 key-positions = <15 32>;
                 bindings = <&kp LG(LS(S))>;
-        };        
+            };        
     };
 
         keymap {
@@ -55,15 +61,15 @@
        		default_layer {
 		bindings = <
 		&kp Q &kp W &kp E &kp R &kp T 					        &kp Y &kp U  &kp I &kp O &kp P 
-		&kp A &kp S &kp D &kp F &kp G 			                &kp H &kp J &kp K &kp L &kp QUOT
-		&mt LSFT Z &kp X &kp C &kp V &kp B		                &kp N &kp M  &kp CMMA &kp DOT &mt LSFT ENTER
-                                &kp LCTL &mo 1              &mo 2 &kp SPC 
+		&kp A &kp S &kp D &kp F &kp G 			                &kp H &kp J &kp K &kp L &kp SQT
+		&mt LSFT Z &kp X &kp C &kp V &kp B		                &kp N &kp M  &kp COMMA &kp DOT &mt LSFT ENTER
+                                &mt LCTL LGUI &mo 1              &mo 2 &kp SPC 
 		>;
 		};
 
        		left_layer {
 		bindings = <
-        &gresc &trans &trans &trans &trans 					        &trans &trans &kp UP &trans &kp BKSP 
+        &kp ESC &trans &trans &trans &trans 					        &trans &trans &kp UP &trans &kp BKSP 
 		&kp TAB &trans &trans &trans &trans  					    &trans &kp LEFT &kp DOWN &kp RIGHT &kp ENTER 
 		&mt LSFT CAPS &trans &trans &trans &trans 					        &trans &kp K_MUTE &kp K_VOL_DN &kp K_VOL_UP  &kp DEL 
                                 &kp LGUI &mo 1             &mo 2 &kp RGUI 
@@ -75,7 +81,7 @@
         &kp N1  &kp N2 &kp N3 &kp N4 &kp N5 					        &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
 		&kp LC(LS(ESC)) &kp LG(LS(S)) &trans &trans &trans 					        &kp MINUS &kp KP_EQUAL  &kp LBRC  &kp RBRC &kp BSLH
 		&trans &trans &trans &trans &trans 					        &trans &trans &kp LPAR &kp RPAR  &kp FSLH
-                                &kp LCTL &mo 3              &mo 2 &kp RTCL
+                                &kp LCTL &mo 3              &mo 2 &kp RCTL
 		>;
 		};	
 		
@@ -83,7 +89,7 @@
 		bindings = <
         &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 					        &trans &trans &trans &trans &trans
 		&trans &trans &trans &trans &trans 					        &trans &trans &trans &trans &trans 
-		&bt BT_CLR  &bt BT_NXT &bt BT_PRV &trans &trans 					        &reset &bootloader  &trans &trans &trans   
+		&bt BT_CLR  &bt BT_NXT &bt BT_PRV &trans &trans 					        &reset &bootloader &trans &trans &trans   
 		                        &kp LALT &trans               &trans &kp RALT 
 		>;
 		};	
