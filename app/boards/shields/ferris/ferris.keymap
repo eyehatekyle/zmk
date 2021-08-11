@@ -23,6 +23,11 @@
                 key-positions = <8 9>;
                 bindings = <&kp BSPC>;
             };
+            combo_del {
+                timeout-ms = <50>;
+                key-positions = <7 8 9>;
+                bindings = <&kp DEL>;
+            };
             combo_enter {
                 timeout-ms = <50>;
                 key-positions = <18 19>;
@@ -72,7 +77,7 @@
 		bindings = <
 		&kp Q &kp W &kp E &kp R &kp T 					        &kp Y &kp U  &kp I &kp O &kp P 
 		&kp A &kp S &kp D &kp F &kp G 			                &kp H &kp J &kp K &kp L &kp SQT
-		&mt LSFT Z &kp X &kp C &kp V &kp B		                &kp N &kp M  &kp COMMA &kp DOT &mt LSFT ENTER
+		&mt LSFT Z &kp X &kp C &kp V &kp B		                &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
                                 &mo 1 &mt LCTL LGUI             &kp SPC &mo 2  
 		>;
 		};
@@ -89,18 +94,18 @@
 		right_layer {
 		bindings = <
         &kp N1  &kp N2 &kp N3 &kp N4 &kp N5 					        &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
-		&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_CLR &bt BT_NXT &bt BT_PRV 					        &kp EQUAL &kp SEMI  &kp LBRC  &kp RBRC &kp BSLH
-		&kp LSFT &trans &trans &kp LALT &kp RALT 					        &kp MINUS &trans &kp LPAR &kp RPAR  &kp FSLH
+		&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_CLR &bt BT_NXT &bt BT_PRV 					        &kp EQUAL &kp SEMI &kp LBKT &kp RBKT &kp BSLH
+		&kp LSFT &kp LCTL &kp LGUI &kp LALT &kp RALT 					        &kp MINUS &trans &kp LPAR &kp RPAR &kp FSLH
                                             &mo 3 &kp LCTL               &kp RCTL &mo 2
 		>;
 		};	
 		
 		tri_layer {
 		bindings = <
-        &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 					        &trans &trans &trans &trans &kp BKSP
+        &trans &trans &trans &trans &trans 					        &trans &trans &trans &trans &trans
 		&trans &trans &trans &trans &trans 					        &trans &trans &trans &trans &trans 
-		&bt BT_CLR  &bt BT_NXT &bt BT_PRV &trans &trans 					        &reset &bootloader &trans &trans &trans   
-		                        &kp LALT &trans               &trans &kp RALT 
+		&trans  &trans &trans &trans &trans 					        &reset &bootloader &trans &trans &trans   
+                                &trans &trans               &trans &trans 
 		>;
 		};	
         
