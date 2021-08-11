@@ -57,7 +57,12 @@
                 timeout-ms = <50>;
                 key-positions = <32 33>;
                 bindings = <&kp BSLH>;
-            };         
+            };
+            combo_lock {
+                timeout-ms = <50>;
+                key-positions = <30 31>;
+                bindings = <&kp LG(L)>;
+            };       
     };
 
         keymap {
@@ -68,16 +73,16 @@
 		&kp Q &kp W &kp E &kp R &kp T 					        &kp Y &kp U  &kp I &kp O &kp P 
 		&kp A &kp S &kp D &kp F &kp G 			                &kp H &kp J &kp K &kp L &kp SQT
 		&mt LSFT Z &kp X &kp C &kp V &kp B		                &kp N &kp M  &kp COMMA &kp DOT &mt LSFT ENTER
-                                &mt LCTL LGUI &mo 1              &mo 2 &kp SPC 
+                                &mo 1 &mt LCTL LGUI             &kp SPC &mo 2  
 		>;
 		};
 
        		left_layer {
-		bindings = <
+        bindings = <           
         &kp ESC &kp F1 &kp F2 &kp F3 &kp F4 					        &kp INS &kp HOME &kp UP &kp END &kp DEL 
 		&kp TAB &kp F5 &kp F6 &kp F7 &kp F8  					    &kp PG_UP &kp LEFT &kp DOWN &kp RIGHT &kp ENTER 
-		&mt LSFT CAPS &kp F9 &kp F10 &kp F11 &kp F12 					        &kp PG_DN &kp K_MUTE &kp K_VOL_DN &kp K_VOL_UP  &kp DEL 
-                                &kp LGUI &mo 1             &mo 2 &kp RGUI 
+		&mt LSFT CAPS &kp F9 &kp F10 &kp F11 &kp F12 					        &kp PG_DN &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP  &kp DEL 
+                                 &mo 1 &kp LGUI             &kp RGUI &mo 2
 		>;
 		};
 		
@@ -86,7 +91,7 @@
         &kp N1  &kp N2 &kp N3 &kp N4 &kp N5 					        &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
 		&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_CLR &bt BT_NXT &bt BT_PRV 					        &kp EQUAL &kp SEMI  &kp LBRC  &kp RBRC &kp BSLH
 		&kp LSFT &trans &trans &kp LALT &kp RALT 					        &kp MINUS &trans &kp LPAR &kp RPAR  &kp FSLH
-                                &kp LCTL &mo 3              &mo 2 &kp RCTL
+                                            &mo 3 &kp LCTL               &kp RCTL &mo 2
 		>;
 		};	
 		
