@@ -113,8 +113,8 @@
 
        		left_layer {
         bindings = <           
-        &kp LC(LA(F1)) &kp LC(LA(F2)) &trans &trans &kp LC(LA(F7)) 					        &kp INS &kp HOME &kp UP &kp END &kp PG_UP 
-		&trans &trans &trans &trans &trans  					    &trans &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN 
+        &trans &trans &trans &trans &trans 					        &kp INS &kp HOME &kp UP &kp END &kp PG_UP 
+		&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_CLR &trans &trans  					    &trans &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN 
 		&trans &trans &trans &trans &trans 					    &trans &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP  &kp C_PP 
                                 &trans &mo 1              &mo 2 &trans 
 		>;
@@ -123,7 +123,7 @@
 		right_layer {
 		bindings = <
         &kp N1  &kp N2 &kp N3 &kp N4 &kp N5 				&kp N6 &kp N7 &kp N8 &kp N9 &kp N0
-		&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_CLR &trans &trans 		&kp GRAVE &kp MINUS &kp EQUAL &kp SEMI &trans
+		&trans &trans &transkighul &trans &kp K_LOCK 		&kp GRAVE &kp MINUS &kp EQUAL &kp SEMI &trans
 		&trans &trans &trans &trans &trans 			     &kp LBKT &kp RBKT &kp LPAR &kp RPAR &trans
                                          &trans &mo 3      &mo 2 &trans
 		>;
